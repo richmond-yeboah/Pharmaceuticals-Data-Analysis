@@ -71,18 +71,79 @@ EDA involved exploring the data to answer key questions like;
 
 The data was analyzed in both sql and power bi. Some business questions were answered in power bi with the help of visualizations, while some were answered in sql by querying. Other questions were answered in both, showing the same results from both, which depicts an accurate and consistent analysis of the data.
 
-some of the questions I answered in sql by data querying are;
+some of the questions I answered in sql by data querying are as follows;
 
 ```sql
 -- Calculate the total sales for each year.
 
 SELECT Year,
-       SUM(Sales) as Yearly_Sales
+       (SELECT FORMAT(SUM(Sales), 2)) as Yearly_Sales
 FROM pharma
 Where Sales > 0
 GROUP BY Year
 ORDER BY Year ASC;
 ```
+
+
+I had to make use of subqueries and common table expressions during some of the queries
+
+
+```sql
+-- Rank the Sales Teams based on their percentage contrbution to total sales
+
+With PercentageCTE AS (SELECT SalesTeam,
+                       SUM(Sales) as Total_Sales
+      FROM pharma
+      WHERE Sales>0
+	  GROUP BY SalesTeam
+      ORDER BY Total_Sales DESC)
+      
+SELECT SalesTeam,
+       Round((Total_Sales / (SELECT SUM(Total_Sales) FROM PercentageCTE)), 2) * 100 AS Percentage_Sales
+FROM PercentageCTE
+GROUP BY 1
+ORDER BY 2 DESC;
+```
+
+
+some of the business questions could only be answered making use of subqueries, common table and expressions and conditional logic
+
+
+```sql
+-- Compare the total sales made by Distributors to the average sales for all Distributors, indicate if they are above average or below average
+
+with DistCTE AS (SELECT Distributor,
+	   SUM(Sales) as Total_Sales FROM pharma
+WHERE Sales > 0
+GROUP BY Distributor
+ORDER BY Total_Sales)
+
+SELECT Distributor,
+       Total_Sales,
+       (SELECT AVG(Total_Sales) FROM DistCTE),
+       CASE 
+          WHEN Total_Sales > (SELECT AVG(Total_Sales) FROM DistCTE) THEN 'Above Average'
+          WHEN Total_Sales < (SELECT AVG(Total_Sales) FROM DistCTE) THEN 'Below Average'
+	   END AS Sales_Status	
+FROM DistCTE
+GROUP BY Distributor;
+```
+
+
+Due to the huge nature of numbers in the dataset, I had to make use the format() method so separate thousands for some queries 
+
+
+```sql
+-- What is the total quantity of products that were returned and how much did the company lose to that
+
+SELECT (SELECT FORMAT(SUM(Quantity), 2)) as quantity_returned,
+       (SELECT FORMAT(SUM(Sales), 2)) as loss_in_sales
+FROM pharma
+WHERE Quantity < 0 and Sales < 0;
+```
+
+
+An sql file has been added to view the queries made to answer some business questions
 
 
 

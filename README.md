@@ -73,6 +73,8 @@ The data was analyzed in both sql and power bi. Some business questions were ans
 
 some of the questions I answered in sql by data querying are as follows;
 
+### sql
+
 ```sql
 -- Calculate the total sales for each year.
 
@@ -159,7 +161,59 @@ Output:
 
 
 
-An sql file has been added to view the queries made to answer some business questions
+
+An sql file has been added so you can view the queries made to answer some business questions.
+
+### power bi
+
+Like I said before, during the visualizations in Power BI, I ended up with 5 dashboards namely;
+- Sales Summary
+- Products
+- Distributors and Customers
+- Sales Team
+- Region
+
+Every Key Performance Metric (KPI) and measures in the Power BI dashboards were calculated using Data Analysis Expressions(DAX).
+
+#### creating DAX measures
+
+Below are some of the DAX calculations.
+
+
+`Total Sales = CALCULATE(SUM(pharm_data[Sales]), pharm_data[Sales]>0)`
+
+`Total Quantities sold = CALCULATE(SUM(pharm_data[Quantity]), pharm_data[Quantity]>0)`
+
+`Sales Per Product Class = [Total Sales] / DISTINCTCOUNT(pharm_data[Product Class])`
+
+`Products returned = ABS(CALCULATE(SUM(pharm_data[Quantity]), pharm_data[Quantity]<0))`
+
+`Number of Cities = DISTINCTCOUNT(pharm_data[City])`
+
+`Loss in sales = ABS(CALCULATE(SUM(pharm_data[Sales]), pharm_data[Sales]<0))`
+
+#### dashboards and visualizations
+
+Below is an image of the Sales Summary Dashboard
+
+![sales_dashb](https://github.com/richmond-yeboah/Pharmaceuticals-Data-Analysis/assets/143017331/459a67ae-1774-44bb-8ea0-63862b5e444e)
+
+
+The Distributors and customers Dashboard follows
+
+![dist_cust](https://github.com/richmond-yeboah/Pharmaceuticals-Data-Analysis/assets/143017331/37da9668-293a-4cf7-a42a-ab5c0536d0ca)
+
+
+Then the Sales Team Dashboard
+
+![sales_team](https://github.com/richmond-yeboah/Pharmaceuticals-Data-Analysis/assets/143017331/a5b86529-6a6a-4f7b-8c57-f95a255c1eb7)
+
+
+## Insights and Recommendations
+
+As seen in the Sales Summary Dashboard above, Total Revenue made from sales is 11.95bn Euros from selling 29M quantity of products, total loss of 146.48M Euros due to customers returning 357,000 quantity of products (reason wasn't stated). Over the 4 years, sales peaked in 2018 with a revenue of 3.55bn Euros but after 2018, sales begun to decline as show in the visualization. August comes in first as the month with the highest total sales/revenue with 1.21bn Euros while January comes last with 680M (0.68bn).
+
+
 
 
 

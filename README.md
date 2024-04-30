@@ -110,7 +110,8 @@ some of the business questions could only be answered making use of subqueries, 
 
 
 ```sql
--- Compare the total sales made by Distributors to the average sales for all Distributors, indicate if they are above average or below average
+-- Compare the total sales made by Distributors to the average sales for all Distributors,
+-- indicate if they are above average or below average
 
 with DistCTE AS (SELECT Distributor,
 	   SUM(Sales) as Total_Sales FROM pharma

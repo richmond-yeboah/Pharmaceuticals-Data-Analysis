@@ -1,5 +1,15 @@
 # Pharmaceuticals-Data-Analysis
 
+## Table of content
+- [Project Overview](#project-overview)
+- [Dataset and Data Source](#dataset-and-data-source)
+- [Tools Used](#tools-used)
+- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Data Querying(sql), DAX and visualization(Power BI)](#data-querying(sql),-dax-and-visualization(power-bi))
+- [Insights and Recommendations](#insights-and-recommendations)
+
+
 ## Project Overview
 
 In this project, I dive into the data of a big pharma company to reveal insights, trends and patterns hidden inside the data. The data contains information about distributors, products, customers, managers, sales teams and a whole lot leading to this project having 5 dashboards at the end of the analysis and visualization.

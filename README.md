@@ -201,7 +201,8 @@ Below is an image of the Sales Summary Dashboard
 
 The Distributors and customers Dashboard follows
 
-![dist_cust](https://github.com/richmond-yeboah/Pharmaceuticals-Data-Analysis/assets/143017331/37da9668-293a-4cf7-a42a-ab5c0536d0ca)
+![dist_cust](https://github.com/richmond-yeboah/Pharmaceuticals-Data-Analysis/assets/143017331/8471a248-3ebc-4fd4-b841-4cfa1e8452da)
+
 
 
 Then the Sales Team Dashboard
@@ -211,7 +212,26 @@ Then the Sales Team Dashboard
 
 ## Insights and Recommendations
 
-As seen in the Sales Summary Dashboard above, Total Revenue made from sales is 11.95bn Euros from selling 29M quantity of products, total loss of 146.48M Euros due to customers returning 357,000 quantity of products (reason wasn't stated). Over the 4 years, sales peaked in 2018 with a revenue of 3.55bn Euros but after 2018, sales begun to decline as show in the visualization. August comes in first as the month with the highest total sales/revenue with 1.21bn Euros while January comes last with 680M (0.68bn).
+As seen in the Sales Summary Dashboard above, Total Revenue made from sales is 11.95bn Euros from selling 29M quantity of products, total loss of 146.48M Euros due to customers returning 357,000 quantity of products (reason wasn't stated). This is quite alarming, it is advisable that the company make it a priority to collect data on the reasons for customers returning products, and analyze to find the leading reasons for this.
+
+Over the 4 years, sales peaked in 2018 with a revenue of 3.55bn Euros but after 2018, sales begun to decline as shown in the visualization. August comes in first as the month with the highest total sales/revenue with 1.21bn Euros while January comes last with 680M (0.68bn Euros). There are products that are purchased more in a certain season or month due to some specific diseases being known to increase in certain months. This can be looked at so that production can be focused on some products durings those seasons, so as to maximize sales.
+
+Among the all the sub-channels(sectors), Retail is where the highest total revenue has been generated from (3.38bn Euros) while Private sector has generated the least (2.55bn Euros). It is recommended that managers explore ways to boost revenue in the Private sector. Consider targeted marketing campaigns, product diversification, or pricing adjustments. Also, managers should make it a point to reach out to business leaders in the private sector to get reasons for this and tailor solutions for them.
+
+Between the two channels (Hospital and Pharmacy), Pharmacies contributed to 52.7% of total sales while Hospitals contributed to 47.3%.
+
+In these 2 countries (Germany and Poland), The company has 751 customers and 29 Distributors.
+
+The top 5 Distributors by sales are Gerlach LLC, Koss, Erdman, Kozey-Emerich and Romaguera-Fey.
+
+The top Customer by sales is Mraz-Kutch Pharma PLC (95M Euros).
+
+Manager Brittany Bold and her Sales Team (Delta) lead in sales with 3.69bn Euros while Manager James Goodwill and his Sales Team (Alfa) are last with 2.62bn Euros.
+
+The top Sales Representative is Jimmy Grey, helping the company generate 994.94M Euros in sales.
+
+These are some of the important insights generated from the data. There are a lot more information and business insights one can get from this analysis and the 5 dashboards. You can have a look at the power bi report [here](https://app.powerbi.com/links/7ywLS4wD6q?ctid=1ce5821c-1942-4733-a6dc-0fc3a82b74db&pbi_source=linkShare&bookmarkGuid=b343dba9-1ba7-4e20-8caa-7112395909d2).
+
 
 
 

@@ -83,6 +83,9 @@ Where Sales > 0
 GROUP BY Year
 ORDER BY Year ASC;
 ```
+Output:
+
+![yearly_sales](https://github.com/richmond-yeboah/Pharmaceuticals-Data-Analysis/assets/143017331/511fa900-0df7-4fec-b398-c0df7d0e79f2)
 
 
 I had to make use of subqueries and common table expressions during some of the queries
@@ -104,6 +107,10 @@ FROM PercentageCTE
 GROUP BY 1
 ORDER BY 2 DESC;
 ```
+Output:
+
+![perc_sales](https://github.com/richmond-yeboah/Pharmaceuticals-Data-Analysis/assets/143017331/5168497b-e281-444b-8ca5-517f054e1608)
+
 
 
 some of the business questions could only be answered making use of subqueries, common table and expressions and conditional logic
@@ -129,6 +136,10 @@ SELECT Distributor,
 FROM DistCTE
 GROUP BY Distributor;
 ```
+Output:
+
+![dist_ave](https://github.com/richmond-yeboah/Pharmaceuticals-Data-Analysis/assets/143017331/9eec4197-c2fd-4469-b85a-728bf6167168)
+
 
 
 Due to the huge nature of numbers in the dataset, I had to make use the format() method so separate thousands for some queries 
@@ -142,6 +153,10 @@ SELECT (SELECT FORMAT(SUM(Quantity), 2)) as quantity_returned,
 FROM pharma
 WHERE Quantity < 0 and Sales < 0;
 ```
+Output:
+
+![loss](https://github.com/richmond-yeboah/Pharmaceuticals-Data-Analysis/assets/143017331/2e188f6e-ceee-403f-9e2b-bbe5b283e320)
+
 
 
 An sql file has been added to view the queries made to answer some business questions

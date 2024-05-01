@@ -222,7 +222,7 @@ Then the Sales Team Dashboard
 
 ## Insights and Recommendations
 
-As seen in the Sales Summary Dashboard above, Total Revenue made from sales is 11.95bn Euros from selling 29M quantity of products, total loss of 146.48M Euros due to customers returning 357,000 quantity of products (reason wasn't stated). This is quite alarming, it is advisable that the company make it a priority to collect data on the reasons for customers returning products, and analyze to find the leading reasons for this.
+As seen in the Sales Summary Dashboard above, Total Revenue made from sales is 11.95bn Euros from selling 29M quantity of products, total loss of 146.48M Euros due to customers returning 357,440 quantity of products (reason wasn't stated). This is quite alarming, it is advisable that the company make it a priority to collect data on the reasons for customers returning products, and analyze to find the leading reasons for this.
 
 Over the 4 years, sales peaked in 2018 with a total of 3.55bn Euros but after 2018, sales begun to decline as shown in the visualization. August comes in first as the month with the highest total sales with 1.21bn Euros while January comes last with 680M (0.68bn Euros). There are products that are purchased more in a certain season or month due to some specific diseases being known to increase in certain months. This can be looked at so that production can be focused on some products durings those seasons, so as to maximize sales.
 

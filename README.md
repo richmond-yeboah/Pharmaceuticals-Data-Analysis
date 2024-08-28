@@ -245,7 +245,7 @@ Manager Brittany Bold and her Sales Team (Delta) lead in sales with 3.69bn Euros
 
 The top Sales Representative is Jimmy Grey, helping the company generate 994.94M Euros in sales.
 
-These are some of the important insights generated from the data. There are a lot more information and business insights one can get from this analysis and the 5 dashboards. You can have a look at the power bi report [here](https://app.powerbi.com/links/7ywLS4wD6q?ctid=1ce5821c-1942-4733-a6dc-0fc3a82b74db&pbi_source=linkShare&bookmarkGuid=b343dba9-1ba7-4e20-8caa-7112395909d2).
+These are some of the important insights generated from the data. There are a lot more information and business insights one can get from this analysis and the 5 dashboards. You can have a look at the power bi report [here](https://app.powerbi.com/view?r=eyJrIjoiYjhiMmM2NDYtZTVjNi00Y2QyLTkwNDQtNjFkNTYwYzBlMjk5IiwidCI6IjFjZTU4MjFjLTE5NDItNDczMy1hNmRjLTBmYzNhODJiNzRkYiJ9).
 
 
 
